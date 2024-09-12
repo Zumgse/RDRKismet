@@ -298,7 +298,7 @@ void kis_gps_gpsd_v3::handle_read(const boost::system::error_code& error, std::s
     if (now.tv_sec < 1)
         new_location->set(gps_location);
 
-    bool set_lat_lon = false;
+    bool set_lat_lon = true;
     bool set_alt= false;
     bool set_fix = false;
     bool set_heading = false;
